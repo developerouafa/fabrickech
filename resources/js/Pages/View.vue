@@ -107,6 +107,7 @@ const props = defineProps({
                     }
                 });
         };
+
 </script>
 
 <template>
@@ -123,7 +124,7 @@ const props = defineProps({
         </Link>
         <span class="text-sm text-gray-400"><i class="fas fa-chevron-right"></i></span>
         <div class="text-gray-600 font-medium uppercase">
-            <div v-if="$page.props.locale.locale != 'ar' && $page.props.locale.locale != 'en' ">
+            <div v-if="$page.props.locale.locale != 'ar' && $page.props.locale.locale != 'en'">
                 {{ productview.title.en }}
             </div>
             <div v-if="$page.props.locale.locale == 'ar'">

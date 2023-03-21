@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\profileusers;
+use App\Models\statusorder;
 use App\Models\User;
 use Carbon\Carbon;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -21,7 +22,21 @@ class CreateUserSeeder extends Seeder
      */
     public function run()
     {
-
+        statusorder::create(
+            ['status' => ['en' => 'Pending', 'ar' => 'قيد الانتظار']],
+        );
+        statusorder::create(
+            ['status' => ['en' => 'Dispatched', 'ar' => 'مُرسَل']],
+        );
+        statusorder::create(
+            ['status' => ['en' => 'Processed', 'ar' => 'معالجتها']],
+        );
+        statusorder::create(
+            ['status' => ['en' => 'Shipped', 'ar' => 'شحنها']],
+        );
+        statusorder::create(
+            ['status' => ['en' => 'Delivered', 'ar' => 'تم التوصيل']]
+        );
         $user = User::create([
             'email' => 'ouafa@gmail.com',
             'password' => Hash::make('123456'),

@@ -5,11 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Mehradsadeghi\FilterQueryString\FilterQueryString;
 use Spatie\Translatable\HasTranslations;
 
 class product extends Model
 {
-    use HasFactory, HasTranslations;
+    use HasFactory, HasTranslations, FilterQueryString;
 
     protected $fillable = [
         'id',
@@ -22,6 +23,9 @@ class product extends Model
     ];
 
     public $translatable = ['title', 'description'];
+
+    //filters
+    protected $filters = ['sort', 'between', 'like'];
 
     // Scopes
     public function scopeProductwith($query){

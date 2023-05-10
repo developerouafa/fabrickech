@@ -28,7 +28,7 @@ class ProductController extends Controller
     //* function index Product
     public function index()
     {
-        $products = product::query()->productselect()->productwith()->get();
+        $products = product::query()->productselect()->productwith()->filter()->get();
         $childrens = category::query()->selectchildrens()->withchildrens()->child()->get();
         $categories = category::query()->selectcategories()->withcategories()->parent()->get();
         $stockproduct = stockproduct::selectstock()->get();

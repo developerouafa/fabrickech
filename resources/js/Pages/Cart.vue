@@ -95,7 +95,7 @@ import { useSwallSuccess, useSwallErreur } from '../Composables/alert.js';
             <i class="fas fa-home"></i>
         </Link>
         <span class="text-sm text-gray-400"><i class="fas fa-chevron-right"></i></span>
-        <p class="text-gray-600 font-medium uppercase">{{__('shoppingcart')}}</p>
+        <p class="text-gray-600 font-medium uppercase">{{__('shoppingcart')}} hitest</p>
     </div>
     <!-- breadcrum end -->
 

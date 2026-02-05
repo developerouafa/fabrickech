@@ -43,7 +43,10 @@ class RolesController extends Controller
         try{
             DB::beginTransaction();
             $role = Role::create(['name' => $request->input('name')]);
-            $role->syncPermissions($request->input('permission'));
+            $permissions = Permission::whereIn('id', $request->input('permission'))->get();
+            $role->syncPermissions($permissions);
+            // $role->syncPermissions($request->input('permission'));
+
             DB::commit();
             toastr()->success(trans('message.create'));
             return redirect()->route('roles.index');

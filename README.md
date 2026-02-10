@@ -184,3 +184,214 @@ Invoice is generated
 Admin manages order via dashboard
 
 This project reflects real-world e-commerce challenges including database design, multilingual support, API development, and SPA architecture.
+
+💳 PayTwo
+Invoice Management & Online Payment System
+
+Laravel · Billing · Accounting · Stripe · Multi-Role System
+
+
+
+
+
+
+
+
+📌 About the Project | حول المشروع
+
+EN
+PayTwo is a professional invoice management and electronic payment system built with Laravel.
+The project is designed for businesses that need to manage clients, products, invoices, subscriptions, and payments with full accounting tracking.
+
+It includes separate roles for Users (Admins / Companies) and Clients, integrated with Stripe billing, subscriptions, and multiple payment methods.
+
+AR
+PayTwo هو نظام احترافي لإدارة الفواتير والدفع الإلكتروني مبني باستخدام Laravel.
+المشروع موجّه للشركات التي تحتاج إلى إدارة العملاء، المنتجات، الفواتير، الاشتراكات، وتتبع الحسابات المالية بدقة.
+
+يتوفر على فصل واضح بين المستخدمين (الشركات / المدراء) و العملاء، مع دمج Stripe وأنظمة دفع متعددة.
+
+🎯 Project Purpose | هدف المشروع
+
+Build a real-world invoicing & billing system
+
+Implement accounting logic (debit / credit)
+
+Manage subscriptions & recurring payments
+
+Separate business users from clients
+
+Integrate online payment gateways
+
+🛠 Tech Stack | التكنولوجيات
+Backend
+
+Laravel
+
+MySQL
+
+Laravel Cashier (Stripe)
+
+Notifications System
+
+Soft Deletes
+
+Payment & Billing
+
+Stripe Subscriptions
+
+Payment Gateways
+
+Bank Transfers
+
+Manual Receipts
+
+👥 Roles System | نظام الصلاحيات
+👤 Users (Businesses / Admins)
+
+Create products & services
+
+Manage clients
+
+Create invoices
+
+Track payments
+
+View accounting records
+
+👥 Clients
+
+Receive invoices
+
+Pay invoices online
+
+View payment history
+
+Manage profile & billing info
+
+🧾 Core Modules | الوحدات الأساسية
+📦 Products & Sections
+
+Products linked to business users
+
+Sections with parent / child structure
+
+Stock management
+
+Promotions & discounts
+
+🧮 Invoicing System
+
+Single product invoices
+
+Group product invoices
+
+Invoice status tracking
+
+Discounts & tax calculation
+
+PDF invoice documents
+
+💰 Payments
+
+Online payments (Stripe)
+
+Bank transfers
+
+Payment gateway records
+
+Manual receipts
+
+Payment history per client
+
+📊 Accounting System
+
+Client accounts (Debit / Credit)
+
+Fund accounts
+
+Automatic balance tracking
+
+Linked to invoices & payments
+
+🔁 Subscriptions
+
+Stripe subscriptions
+
+Trial periods
+
+Subscription items
+
+Status tracking
+
+🗄 Database Design (High Level)
+
+Users & Roles
+
+Clients & Client Profiles
+
+Products & Sections
+
+Invoices & Invoice Items
+
+Payments (Gateway / Bank / Receipt)
+
+Client Accounts
+
+Fund Accounts
+
+Subscriptions (Stripe)
+
+Notifications
+
+Internal Messages System
+
+✔ Designed with accounting accuracy and data integrity
+
+🔄 Business Flow | منطق العمل
+
+EN
+
+Business creates products/services
+
+Client is registered
+
+Invoice is generated
+
+Client pays via Stripe or other method
+
+Payment updates accounting records
+
+Balances are recalculated automatically
+
+AR
+
+الشركة تنشئ منتجات أو خدمات
+
+يتم تسجيل العميل
+
+يتم إنشاء الفاتورة
+
+العميل يؤدي الدفع إلكترونياً أو يدوياً
+
+يتم تحديث الحسابات
+
+يتم احتساب الرصيد تلقائياً
+
+💬 Internal Messaging
+
+Messaging system between users
+
+Useful for internal communication & notifications
+
+---
+
+## 👨‍💻 ** Developer | OUAFA Bentaleb**
+
+**Ouafa Developer**  
+- GitHub: [@developerouafa](https://github.com/developerouafa)
+- Email: developerouafa@gmail.com
+
+---
+
+
